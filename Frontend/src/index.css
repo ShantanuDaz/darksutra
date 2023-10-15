@@ -4,3 +4,8 @@
   box-sizing: border-box;
   font-family: "Comic Sans MS";
 }
+.glass {
+  background: rgba(165, 164, 164, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}

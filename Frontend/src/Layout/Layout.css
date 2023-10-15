@@ -51,3 +51,30 @@
   font-weight: bold;
   letter-spacing: 1.2px;
 }
+#social {
+  display: grid;
+  gap: 5px;
+  position: fixed;
+  right: 0;
+  top: 50%;
+}
+#social a {
+  padding: 5px;
+  padding-right: 10px;
+  border-radius: 5px 0 0 5px;
+  transition: all 250ms;
+  display: flex;
+  align-items: center;
+}
+#social img {
+  position: relative;
+  width: 2.5rem;
+  aspect-ratio: 1/1;
+}
+
+#social a:hover {
+  transform: scale(1.5);
+  right: 1rem;
+  padding-right: 20px;
+  margin: 10px 0;
+}
