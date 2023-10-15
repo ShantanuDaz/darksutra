@@ -1,0 +1,14 @@
+#error-page {
+  height: 100vh;
+  display: grid;
+}
+#error-page article {
+  margin: auto;
+  text-align: center;
+  font-size: 2rem;
+}
+
+#error-page article h1 {
+  font-size: 5rem;
+  color: rgb(65, 61, 61);
+}
