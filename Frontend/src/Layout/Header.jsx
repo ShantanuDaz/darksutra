@@ -8,19 +8,19 @@ const Header = () => {
           <nav>
             <ul>
               <li>
-                <Link>Home</Link>
+                <Link to={"/"}>Home</Link>
               </li>
               <li>
-                <Link>Category</Link>
+                <Link to={"/Category"}>Category</Link>
               </li>
               <li>
-                <Link>Packages</Link>
+                <Link to={"/Packages"}>Packages</Link>
               </li>
               <li>
-                <Link>Contact Us</Link>
+                <Link to={"/Contact"}>Contact Us</Link>
               </li>
               <li>
-                <Link>About Us</Link>
+                <Link to={"/About"}>About Us</Link>
               </li>
             </ul>
           </nav>

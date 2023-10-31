@@ -37,7 +37,7 @@
 
 #menu li:hover {
   box-shadow: 0 0 10px white;
-  transform: scale(1.2);
+  transform: scale(1.1);
   margin: 0 10px;
 }
 
@@ -73,7 +73,7 @@
 }
 
 #social a:hover {
-  transform: scale(1.5);
+  transform: scale(1.1);
   right: 1rem;
   padding-right: 20px;
   margin: 10px 0;
