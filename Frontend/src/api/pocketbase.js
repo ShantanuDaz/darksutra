@@ -6,7 +6,7 @@ const pb = new PocketBase(import.meta.env.VITE_PB_URL);
 const pocketBase = {
   //Function to get pocketbase connection and setting authToken in authStore
   getPbConn: async () => {
-    if (pb.health.check()) return pb;
+    // if (pb.health.check()) return pb;
 
     const authData = await pb
       .collection("users")

@@ -9,7 +9,7 @@ export default function Home() {
   const getAllCategories = async () => {
     try {
       const pb = await pocketBase.getPbConn();
-      const records = await pb.collection("Category").getFullList({
+      const records = await pb.collection("Categories").getFullList({
         sort: "-created",
       });
       console.log(records);
