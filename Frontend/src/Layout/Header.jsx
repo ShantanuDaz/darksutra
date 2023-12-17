@@ -8,28 +8,28 @@ const Header = () => {
           <nav>
             <ul>
               <li>
-                <Link>Home</Link>
+                <Link to={"/"}>Home</Link>
               </li>
               <li>
-                <Link>Category</Link>
+                <Link to={"/Category"}>Category</Link>
               </li>
               <li>
-                <Link>Packages</Link>
+                <Link to={"/Packages"}>Packages</Link>
               </li>
               <li>
-                <Link>Contact Us</Link>
+                <Link to={"/Contact"}>Contact Us</Link>
               </li>
               <li>
-                <Link>About Us</Link>
+                <Link to={"/About"}>About Us</Link>
               </li>
             </ul>
           </nav>
         </section>
         <section id="contact-banner">
-          <p>
+          <div>
             <p>darksutra@gmail.com</p>
             <p>+91 9716414417</p>
-          </p>
+          </div>
         </section>
       </section>
     </header>
