@@ -8,6 +8,7 @@ import Home from "./Pages/Home/Home";
 import Category from "./Pages/Category/Category";
 import Contact from "./Pages/Contact/Contact";
 import About from "./Pages/About/About";
+import Packages from "./Pages/Packages/Packages";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: "/Category",
         element: <Category />,
+      },
+      {
+        path: "/Packages",
+        element: <Packages />,
       },
       {
         path: "/Contact",

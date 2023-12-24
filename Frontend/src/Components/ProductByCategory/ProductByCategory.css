@@ -1,0 +1,4 @@
+.ProductByCategory > article > div {
+  height: 40vh;
+  display: flex;
+}

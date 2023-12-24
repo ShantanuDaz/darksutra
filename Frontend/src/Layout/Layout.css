@@ -12,6 +12,8 @@
   padding: 10px;
   color: white;
   letter-spacing: 0.8px;
+  position: relative;
+  z-index: 1;
 }
 #menu h1 {
   letter-spacing: 3px;
@@ -20,8 +22,9 @@
   margin-left: 10px;
   list-style: none;
   display: flex;
+  align-items: center;
   gap: 10px;
-  font-size: 1.5rem;
+  font-size: 2vw;
   font-weight: bold;
 }
 #menu li {
@@ -40,14 +43,24 @@
   transform: scale(1.1);
   margin: 0 10px;
 }
-
+#headerCategories {
+  position: relative;
+}
+#headerCategories > section {
+  display: none;
+  position: absolute;
+  z-index: 2;
+}
+#headerCategories:hover > section {
+  display: grid;
+}
 #logo {
   width: 7rem;
 }
 #contact-banner {
   display: flex;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 2.5vw;
   font-weight: bold;
   letter-spacing: 1.2px;
 }

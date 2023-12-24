@@ -1,0 +1,9 @@
+.productCard {
+  height: 100%;
+}
+.productCard > div {
+  height: calc(100% - 30px);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
