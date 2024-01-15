@@ -4,7 +4,7 @@ const Header = ({ categories = [] }) => {
   const size = useSize();
   console.log(size);
 
-  const getNav = () => {
+  const getNav = (size) => {
     return (
       <nav>
         <ul>

@@ -50,9 +50,30 @@
   display: none;
   position: absolute;
   z-index: 2;
+  background-image: linear-gradient(90deg, #e22581, #6e60a4, #22abcc, #c9cb0f);
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid white;
+  box-shadow: 0 0 10px white;
+  max-height: 40vh;
 }
 #headerCategories:hover > section {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+#headerCategories > section > a {
+  border-bottom: 1px solid white;
+  border-radius: 0px;
+  white-space: nowrap;
+  padding: 2px;
+}
+
+#headerCategories > section > a:hover {
+  box-shadow: 0 0 10px white;
+  border: 1px solid white;
 }
 #logo {
   width: 7rem;
@@ -60,7 +81,7 @@
 #contact-banner {
   display: flex;
   align-items: center;
-  font-size: 2.5vw;
+  font-size: 2vw;
   font-weight: bold;
   letter-spacing: 1.2px;
 }
@@ -80,7 +101,8 @@
   display: flex;
   align-items: center;
 }
-#social img {
+#social img,
+#socialfooter img {
   position: relative;
   width: 2.5rem;
   aspect-ratio: 1/1;
@@ -91,4 +113,13 @@
   right: 1rem;
   padding-right: 20px;
   margin: 10px 0;
+}
+
+footer {
+  color: white;
+  background-image: linear-gradient(90deg, #e22581, #6e60a4, #22abcc, #c9cb0f);
+  display: flex;
+}
+footer > div {
+  flex: 1;
 }

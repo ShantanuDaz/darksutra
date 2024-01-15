@@ -23,22 +23,21 @@ const Body = () => {
           sort: "-created",
         });
         const products = [];
-        await Promise.all(
-          productsData.map(async (el) => {
-            const Photos = [];
-            await Promise.all(
-              el.Photos.map(async (pic) => {
-                const url = pb.files.getUrl(el, pic);
-                Photos.push(url);
-              })
-            );
-            products.push({
-              ...el,
-              Photos,
-            });
-          })
-        );
-        console.log(products);
+        // await Promise.all(
+        //   );
+        productsData.forEach((el) => {
+          const Photos = [];
+          el.Photos.forEach((pic) => {
+            const url = pb.files.getUrl(el, pic);
+            Photos.push(url);
+          });
+          // await Promise.all(
+          // );
+          products.push({
+            ...el,
+            Photos,
+          });
+        });
         const categoriesMapping = {};
         const productsMapping = {};
         products.forEach((product) => {
@@ -59,7 +58,7 @@ const Body = () => {
             return {
               name: el.name,
               id: el.id,
-              img: el.img,
+              img: pb.files.getUrl(el, el.img),
             };
           })
         );
